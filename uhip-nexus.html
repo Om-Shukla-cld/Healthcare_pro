@@ -7,21 +7,21 @@
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet"/>
 <style>
   :root {
-    --bg: #f4f6fb;
-    --surface: #ffffff;
-    --surface2: #f0f4ff;
-    --border: #e2e8f7;
+    --bg: #1a1a1a;
+    --surface: #2a2a2a;
+    --surface2: #3a3a3a;
+    --border: #444444;
     --accent: #2563eb;
     --accent2: #0ea5e9;
     --accent3: #6366f1;
     --green: #10b981;
     --red: #ef4444;
     --amber: #f59e0b;
-    --text: #0f172a;
-    --text2: #475569;
-    --text3: #94a3b8;
-    --shadow: 0 2px 16px rgba(37,99,235,0.07);
-    --shadow-lg: 0 8px 40px rgba(37,99,235,0.13);
+    --text: #ffffff;
+    --text2: #cccccc;
+    --text3: #aaaaaa;
+    --shadow: 0 2px 16px rgba(0,0,0,0.3);
+    --shadow-lg: 0 8px 40px rgba(0,0,0,0.5);
     --radius: 16px;
     --radius-sm: 10px;
   }
@@ -38,7 +38,7 @@
   /* ── LANDING PAGE ── */
   #landing {
     min-height: 100vh;
-    background: linear-gradient(135deg, #eef2ff 0%, #f0f9ff 50%, #ecfdf5 100%);
+    background: linear-gradient(135deg, #1a1a1a 0%, #2a2a2a 50%, #3a3a3a 100%);
     display: flex;
     flex-direction: column;
   }
@@ -48,7 +48,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 22px 48px;
-    background: rgba(255,255,255,0.8);
+    background: rgba(0,0,0,0.8);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
     position: sticky; top: 0; z-index: 100;
@@ -81,7 +81,7 @@
 
   .hero-badge {
     display: inline-flex; align-items: center; gap: 8px;
-    background: rgba(37,99,235,0.08); border: 1px solid rgba(37,99,235,0.18);
+    background: rgba(37,99,235,0.2); border: 1px solid rgba(37,99,235,0.4);
     color: var(--accent); border-radius: 999px;
     padding: 6px 16px; font-size: 0.82rem; font-weight: 600;
     letter-spacing: 0.02em;
@@ -132,12 +132,12 @@
     display: flex; align-items: center; justify-content: center;
     font-size: 26px;
   }
-  .icon-doc  { background: linear-gradient(135deg,#dbeafe,#bfdbfe); }
-  .icon-pat  { background: linear-gradient(135deg,#d1fae5,#a7f3d0); }
-  .icon-emg  { background: linear-gradient(135deg,#fee2e2,#fecaca); }
-  .icon-ai   { background: linear-gradient(135deg,#ede9fe,#ddd6fe); }
-  .icon-icu  { background: linear-gradient(135deg,#fef3c7,#fde68a); }
-  .icon-med  { background: linear-gradient(135deg,#e0f2fe,#bae6fd); }
+  .icon-doc  { background: linear-gradient(135deg,#1e3a8a,#3b82f6); }
+  .icon-pat  { background: linear-gradient(135deg,#065f46,#10b981); }
+  .icon-emg  { background: linear-gradient(135deg,#991b1b,#ef4444); }
+  .icon-ai   { background: linear-gradient(135deg,#5b21b6,#8b5cf6); }
+  .icon-icu  { background: linear-gradient(135deg,#92400e,#f59e0b); }
+  .icon-med  { background: linear-gradient(135deg,#0c4a6e,#0ea5e9); }
 
   .portal-card h3 { font-size: 0.95rem; font-weight: 600; color: var(--text); }
   .portal-card p  { font-size: 0.78rem; color: var(--text2); text-align: center; line-height: 1.5; }
@@ -150,7 +150,7 @@
   .auth-wrap {
     flex: 1; display: flex; align-items: center; justify-content: center;
     padding: 40px 24px;
-    background: linear-gradient(135deg,#eef2ff,#f0f9ff,#ecfdf5);
+    background: linear-gradient(135deg,#1a1a1a,#2a2a2a,#3a3a3a);
   }
 
   .auth-box {
@@ -187,7 +187,7 @@
     outline: none; transition: border 0.18s;
     margin-bottom: 16px;
   }
-  input:focus, select:focus { border-color: var(--accent); background: #fff; }
+  input:focus, select:focus { border-color: var(--accent); background: var(--surface); }
 
   .btn {
     display: inline-flex; align-items: center; justify-content: center; gap: 8px;
@@ -483,14 +483,14 @@
 <div id="landing">
   <nav class="top-nav">
     <div class="logo">
-      <div class="logo-icon">🏥</div>
+      
       UHIP <span>Nexus</span>
     </div>
     <div style="font-size:0.82rem;color:var(--text2);">Healthcare Intelligence Platform</div>
   </nav>
 
   <div class="hero">
-    <div class="hero-badge">🚀 Version 2.0 — AI-Powered</div>
+    
     <h1>The <em>Operating System</em> for Modern Healthcare</h1>
     <p>Predictive, preventive & collaborative healthcare network. Select your portal to continue.</p>
 
